@@ -15,8 +15,8 @@ if (!apiKey) {
 
 router.get("/bodyPart/:part", async (_req: Request, res: Response) => {
     try{
-        const part = _req.params;
-        const response = await axios.get('${baseUrl}/exercises/bodyPart/${part}', {
+        const { part } = _req.params;
+        const response = await axios.get(`${baseURL}/exercises/bodyPart/${part}`, {
            headers: {
             "x-rapidapi-host": apiHost,
             "x-rapidapi-key": apiKey
