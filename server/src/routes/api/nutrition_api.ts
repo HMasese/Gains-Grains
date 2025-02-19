@@ -36,7 +36,7 @@ router.get("/search/:query", async (req: Request, res: Response) => {
         });
 
         res.json(response.data);
-    } catch (err) {
+    } catch (err:any) {
         console.error(err);
         res.status(500).json({ error: "Failed to search for food items" });
     }
@@ -51,7 +51,7 @@ router.get("/ingredient/:id", async (req: Request, res: Response) => {
         });
 
         res.json(response.data);
-    } catch (err) {
+    } catch (err:any) {
         console.error(err);
         res.status(500).json({ error: "Failed to fetch ingredient details" });
     }
