@@ -1,0 +1,32 @@
+h2 {
+    padding-bottom: 20px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.col-md-6 {
+    flex: 1;
+    padding: 10px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+h4 a {
+    font-size: 1.2rem;
+    color: #069a2d;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+h4 a:hover {
+    color: #069a2d;
+}
