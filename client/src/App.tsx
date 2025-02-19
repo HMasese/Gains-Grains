@@ -9,10 +9,11 @@ import Userbody from './components/Userbody';
 import ProfilePic from './components/Profilepic';
 
 // Importing styles
-import './styles/header.css';
+import './styles/headerXfooter.css';
 import './styles/index.css';
-import './styles/Users.css';
-import './styles/Footer.css';
+import './styles/usersinfo.css';
+import './styles/navbar.css';
+import './styles/login.css';
 
 function App() {
   return (
