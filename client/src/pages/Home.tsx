@@ -4,6 +4,7 @@ import type { UserData } from "../interfaces/UserData";
 import ErrorPage from "./ErrorPage";
 import UserList from '../components/Users';
 import auth from '../utils/auth';
+import Recipe from "../components/Recipe";
 
 const Home = () => {
 
@@ -51,7 +52,10 @@ const Home = () => {
                         </h1>
                     </div>
                 ) : (
+                    <>
                     <UserList users={users} />
+                    <Recipe/>
+                    </>
                 )}
         </>
     );
