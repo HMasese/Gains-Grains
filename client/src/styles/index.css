@@ -1,5 +1,5 @@
-import bootstrap from 'bootstrap/dist/css/bootstrap.min.css';
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+Bootstrap CSS is not imported here. Ensure it is included in your HTML or JS file.
+
 /* Document
    ========================================================================== */
 /**
@@ -10,6 +10,7 @@ import bootstrap from 'bootstrap/dist/css/bootstrap.min.css';
   line-height: 1.15;
   /* 1 */
   -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   /* 2 */
 }
 

@@ -1,26 +1,13 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 const Recipe = () => {
-    // const apiKey = 'NUTRITION_DB_API_KEY';
-    // const apiUrl = 'https://api.spoonacular.com';
-    // useEffect(() => {
-    //     fetch(apiUrl, {
-    //         method: 'GET',
-    //         headers: {
-    //             'Authorization': `Bearer ${apiKey}`
-    //         }
-    //     })
-    //         .then(response => response.json())
-    //         .then(data => {
-    //             console.log(data);
-    //         })
-    //         .catch(error => {
-    //             console.error('Error:', error);
-    //         })
-    // }, [])
+    const [recipes, setRecipes] = useState([] as any)
     useEffect(() => {
         searchFood()
     }, [])
+    useEffect(() => {
+        console.log(recipes)
+    }, [recipes])
     
     async function searchFood() {
         const query = 'chicken';
@@ -28,9 +15,22 @@ const Recipe = () => {
         // const response = await fetch(`/api/nutrition/search/${query}`);
         const data = await response.json();
         console.log(data);
+        setRecipes(data);
     };
     return (
-        <div>Recipe</div>
+        <div>
+            <section>
+                {
+                    // condition ? do this : do this instead 
+                    recipes.results ? <>
+                    {recipes.results.map((element:any)=>(<div key={element.id}>
+                        {element.title}
+                        <img src={element.image} alt={element.title} />
+                    </div>))}
+                    </>: <div>no recipes to display</div>
+                }
+            </section>
+        </div>
     )
 }
 
