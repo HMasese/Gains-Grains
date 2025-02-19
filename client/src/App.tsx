@@ -1,8 +1,8 @@
 import { Outlet } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Header from './components/Header';
+import Header from './components/header';
 import Footer from './components/Footer';
-import Animal from './components/Animal';
+import Animal from './components/animal';
 import EnterButton from './components/EnterButton';
 import Loginbutton from './components/Loginbutton';
 
