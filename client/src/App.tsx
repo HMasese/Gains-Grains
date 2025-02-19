@@ -2,12 +2,17 @@ import { Outlet } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Header from './components/header';
 import Footer from './components/Footer';
-import Animal from './components/animal';
+import Motivation from './components/animal';
 import EnterButton from './components/EnterButton';
 import Loginbutton from './components/Loginbutton';
 import Userbody from './components/Userbody';
 import ProfilePic from './components/Profilepic';
-
+// import './header.css';
+// import './index.css';
+// import './login.css';
+// import './navbar.css';
+// import './userinfo.css';
+// import './usersettings.css';
 
 function App() {
   return (
@@ -24,8 +29,8 @@ function App() {
         <h1>Profilepic</h1>
         <Userbody />
         <Outlet />
-        <Animal />
-        
+        <Motivation />
+
       </main>
       <Footer />
     </div>
