@@ -8,9 +8,9 @@ const router = Router();
 const apiKey = process.env.NUTRITION_DB_API_KEY;
 const baseURL = "https://api.spoonacular.com";
 
-if (!apiKey) {
-    throw new Error("API error.");
-}
+// if (!apiKey) {
+//     throw new Error("API error.");
+// }
 
 // Get nutrition details of a food item by its ID
 router.get("/food/:id", async (req: Request, res: Response) => {
@@ -31,10 +31,12 @@ router.get("/food/:id", async (req: Request, res: Response) => {
 router.get("/search/:query", async (req: Request, res: Response) => {
     try {
         const { query } = req.params;
-        const response = await axios.get(`${baseURL}/food/menuItems/search`, {
-            params: { query, apiKey },
-        });
-
+        console.log(query)
+        console.log(apiKey)
+        // const response = await axios.get(`${baseURL}/food/menuItems/search`, {
+        //     params: { query, apiKey },
+        // });
+        const response=await axios.get(`${baseURL}/recipes/complexSearch?query=${query}&apiKey=${process.env.NUTRITION_DB_API_KEY}`)
         res.json(response.data);
     } catch (err:any) {
         console.error(err);
@@ -49,7 +51,7 @@ router.get("/ingredient/:id", async (req: Request, res: Response) => {
         const response = await axios.get(`${baseURL}/food/ingredients/${id}/information`, {
             params: { apiKey },
         });
-
+        // const response=await axios.get(`${baseURL}/recipes/complexSearch?query=${query}&apiKey=${apiKey}`)
         res.json(response.data);
     } catch (err:any) {
         console.error(err);
@@ -57,4 +59,4 @@ router.get("/ingredient/:id", async (req: Request, res: Response) => {
     }
 });
 
-export default router;
+export { router as nutritionRouter};

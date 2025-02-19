@@ -5,7 +5,7 @@ function header() {
             <nav>
                 <ul>
                     <li><a href="#">Workout Plans</a></li>
-                    <li><a href="#">Nutritional Plans</a></li>
+                    <li><a href="Nutrition.html">Nutritional Plans</a></li>
                     <li><a href="#">Forum</a></li>
                     <li><a href="#">Gyms near me</a></li>
                     <li><a href="#">gym Keys</a></li>

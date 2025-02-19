@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition</title>
+</head>
+<body>
+    <h1>Nutrition</h1>
+    <p>Testing testing 1 2 3</p>
+    <a href="index.html">Home Page</a>
+
+    <script>
+        const apiKey = 'NUTRITION_DB_API_KEY';
+        const apiUrl = 'https://api.spoonacular.com';
+
+        fetch(apiUrl, {
+            method: 'GET',
+            headers: {
+                'Authorization': `Bearer ${apiKey}`
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        })
+        async function searchFood() {
+            const query = document.getElementById('searchQuery').value;
+            const response = await fetch(`/api/nutrition/search/${query}`);
+            const data = await response.json();
+            document.getElementById('results').innerText = JSON.stringify(data, null, 2);
+        };
+    </script>
+</body>
+</html>
