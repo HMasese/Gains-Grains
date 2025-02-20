@@ -10,7 +10,6 @@ import ProfilePic from './components/Profilepic';
 
 // Importing styles
 
-
 import './styles/index.css';
 
 
