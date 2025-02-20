@@ -1,4 +1,11 @@
-
+.inconsolata-unique {
+  font-family: "Inconsolata", serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Replace with the desired font weight value */
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
 :root {
   --primary-color: #28a745;  /* Green for fitness/nutrition */
   --secondary-color: #ff9800; /* Orange for energy */
@@ -12,12 +19,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Extenda+30+Deca&display=swap');
 
 html {
-<<<<<<< HEAD
     background-color: rgb(255, 255, 255);
+    body {
+  background-image: url("bgdesert.jpg");
+}
     
-=======
-    background-color: beige;
->>>>>>> 2835b4e0573eb07583f05b8c5e49ad834c31a918
 }
 
 body {
@@ -73,20 +79,6 @@ header h1 {
 .navbar a:hover {
   color: var(--secondary-color);
 }
-<<<<<<< HEAD
-/* General Styles */
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #ffffff;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-=======
->>>>>>> 2835b4e0573eb07583f05b8c5e49ad834c31a918
 
 /* PROFILE PAGE */
 .profile-container {
@@ -106,7 +98,6 @@ body {
   border: 4px solid #27ae60;
 }
 
-<<<<<<< HEAD
 /* User Info */
 .username {
   font-size: 24px;
@@ -201,21 +192,7 @@ body {
 }
 
 /* Login Container */
-=======
-/* LOGIN PAGE */
->>>>>>> 2835b4e0573eb07583f05b8c5e49ad834c31a918
 .login-container {
-  background: white;
-  padding: 30px;
-  width: 350px;
-<<<<<<< HEAD
-  border-radius: 15px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  text-align: center;
-}
-
-/* Logo */
-.logo {
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -298,12 +275,11 @@ body {
   justify-content: space-between;
   align-items: flex;
   padding-bottom: 15px;
-  border-bottom: 2px solid #ffffff;
-}
-
-.dashboard-header h2 {
-  font-size: 24px;
-  color: #333;
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #ffffff;
+  margin: 0;
+  padding: 0;
 }
 
 /* User Stats Grid */
@@ -553,9 +529,9 @@ footer {
   width: 100%;
   font-size: 0.9rem;
 }
-=======
+/* ======= */
   border-radius: 10px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
->>>>>>> 2835b4e0573eb07583f05b8c5e49ad834c31a918
+/* >>>>>>> 2835b4e0573eb07583f05b8c5e49ad834c31a918 */
