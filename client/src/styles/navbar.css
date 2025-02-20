@@ -10,8 +10,6 @@ body {
     height: 100vh;
 }
 
-
-
 /* Profile Container */
 .profile-container {
     background: white;
@@ -97,9 +95,6 @@ body {
     margin-top: 20px;
 }
 
-div {
-    padding-left: 10px;
-}
 .profile-button {
     background-color: #27ae60;
     color: white;
@@ -112,10 +107,11 @@ div {
     margin: 5px;
 }
 
-h1 {
-
-}
 .profile-button:hover {
     background-color: #219150;
 }
 
+/* Keeping the padding-left style from main */
+div {
+    padding-left: 10px;
+}

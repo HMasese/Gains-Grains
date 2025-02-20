@@ -1,5 +1,9 @@
+:root {
+    --footer-bg: #222; /* Change to 'transparent' if needed */
+}
+
 footer {
-    background-color: transparent;
+    background-color: var(--footer-bg);
     color: #fff;
     text-align: center;
     align-self: center;
@@ -9,3 +13,4 @@ footer {
     width: 100%;
     font-size: 0.9rem;
 }
+

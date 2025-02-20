@@ -1,5 +1,5 @@
 /* General Styles */
-body {
+/* body {
     font-family: 'Poppins', sans-serif;
     background: #f4f4f9;
     margin: 0;
@@ -7,7 +7,7 @@ body {
 }
 
 /* Dashboard Container */
-.dashboard-container {
+/* .dashboard-container {
     width: 90%;
     max-width: 1000px;
     margin: 40px auto;
@@ -15,59 +15,59 @@ body {
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
+} */
 
 /* Header */
-.dashboard-header {
+/* .dashboard-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 15px;
-    border-bottom: 2px solid #ddd;
-}
+    border-bottom: 2px solid #ddd; }*/
 
-.dashboard-header h2 {
+
+/* .dashboard-header h2 {
     font-size: 24px;
     color: #333;
-}
+} */
 
 /* User Stats Grid */
-.stats-grid {
+/* .stats-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     margin-top: 20px;
-}
+} */
 
-.stat-card {
+/* .stat-card {
     background: #27ae60;
     color: white;
     padding: 15px;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-}
-
+} */
+/* 
 .stat-card h3 {
     font-size: 22px;
     margin: 5px 0;
-}
+} */
 
-.stat-card p {
+/* .stat-card p {
     font-size: 14px;
-}
+} */
 
 /* Recent Activity */
-.activity-section {
+/* .activity-section {
     margin-top: 20px;
-}
+} */
 
-.activity-list {
+/* .activity-list {
     list-style: none;
     padding: 0;
-}
+} */ */
 
-.activity-list li {
+/* .activity-list li {
     background: #f9f9f9;
     padding: 10px;
     border-left: 5px solid #27ae60;
@@ -78,7 +78,7 @@ body {
 }
 
 /* Button */
-.action-button {
+/* .action-button {
     display: block;
     width: 100%;
     background: #27ae60;
@@ -92,7 +92,6 @@ body {
     margin-top: 15px;
     text-align: center;
 }
-
-.action-button:hover {
-    background: #219150;
-}
+/* 
+/* .action-button:hover {
+    /* background: #219150;} */ 
