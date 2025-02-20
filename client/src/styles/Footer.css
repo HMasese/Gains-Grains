@@ -1,10 +1,16 @@
+:root {
+    --footer-bg: #222; /* Change to 'transparent' if needed */
+}
+
 footer {
-    background-color: #222;
+    background-color: var(--footer-bg);
     color: #fff;
     text-align: center;
+    align-self: center;
     padding: 1rem;
     position: fixed;
     bottom: 0;
     width: 100%;
     font-size: 0.9rem;
 }
+

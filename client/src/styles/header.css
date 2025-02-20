@@ -1,8 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Extenda+30+Deca&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Extenda+30+Deca&display=swap');
 
 
+html {
+    background-color: beige;
+    
+}
+
+header a {
+    color: red;
+}
 header {
-    background-color: #1e1e1e;
+    background-color:beige;
+    font-weight: bold;
     color: #ffffff;
     text-align: center;
     padding: 20px;
@@ -48,4 +57,4 @@ hr {
     height: 2px;
     background-color: #d96d14;
     margin-top: 15px;
-}
+} */

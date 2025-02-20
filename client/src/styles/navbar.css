@@ -110,3 +110,8 @@ body {
 .profile-button:hover {
     background-color: #219150;
 }
+
+/* Keeping the padding-left style from main */
+div {
+    padding-left: 10px;
+}
