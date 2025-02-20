@@ -8,65 +8,18 @@
   --dark-gray: #555;
   
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Extenda+30+Deca&display=swap');
 
 html {
+<<<<<<< HEAD
     background-color: rgb(255, 255, 255);
     
+=======
+    background-color: beige;
+>>>>>>> 2835b4e0573eb07583f05b8c5e49ad834c31a918
 }
 
-header a {
-    color: red;
-}
-header {
-    background-color: green;
-    font-weight: bold;
-    color: #ffffff;
-    text-align: center;
-    padding: 20px;
-    font-family: 'Extenda 30 Deca', sans-serif;
-}
-
-header h1 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    font-weight: bold;
-    font-family: 'Extenda 30 Deca', sans-serif;
-}
-
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 500;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-nav ul li a:hover {
-    background-color: #069a2d;
-    color: #000;
-}
-
-hr {
-    border: none;
-    height: 2px;
-    background-color: #069a2d;
-    margin-top: 15px;
-}
 body {
   
 
@@ -78,7 +31,28 @@ body {
   line-height: 1.6;
 }
 
-/* === NAVBAR === */
+/* HEADER */
+header {
+    background-color: green;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Extenda 30 Deca', sans-serif;
+}
+
+header a {
+    color: red;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: 'Extenda 30 Deca', sans-serif;
+}
+
+/* NAVBAR */
 .navbar {
   background-color: var(--primary-color);
   padding: 15px 20px;
@@ -99,6 +73,7 @@ body {
 .navbar a:hover {
   color: var(--secondary-color);
 }
+<<<<<<< HEAD
 /* General Styles */
 body {
   font-family: 'Poppins', sans-serif;
@@ -110,8 +85,10 @@ body {
   align-items: center;
   height: 100vh;
 }
+=======
+>>>>>>> 2835b4e0573eb07583f05b8c5e49ad834c31a918
 
-/* Profile Container */
+/* PROFILE PAGE */
 .profile-container {
   background: white;
   width: 400px;
@@ -121,7 +98,6 @@ body {
   text-align: center;
 }
 
-/* Profile Image */
 .profile-pic {
   width: 120px;
   height: 120px;
@@ -130,6 +106,7 @@ body {
   border: 4px solid #27ae60;
 }
 
+<<<<<<< HEAD
 /* User Info */
 .username {
   font-size: 24px;
@@ -224,10 +201,14 @@ body {
 }
 
 /* Login Container */
+=======
+/* LOGIN PAGE */
+>>>>>>> 2835b4e0573eb07583f05b8c5e49ad834c31a918
 .login-container {
   background: white;
   padding: 30px;
   width: 350px;
+<<<<<<< HEAD
   border-radius: 15px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -572,3 +553,9 @@ footer {
   width: 100%;
   font-size: 0.9rem;
 }
+=======
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+>>>>>>> 2835b4e0573eb07583f05b8c5e49ad834c31a918
