@@ -10,7 +10,7 @@ const Recipe = () => {
     }, [recipes])
     
     async function searchFood() {
-        const query = 'chicken';
+        const query = 'Chicken';
         const response = await fetch(`/api/nutrition/search/${query}`);
         // const response = await fetch(`/api/nutrition/search/${query}`);
         const data = await response.json();
@@ -22,12 +22,12 @@ const Recipe = () => {
             <section>
                 {
                     // condition ? do this : do this instead 
-                    recipes.results ? <>
-                    {recipes.results.map((element:any)=>(<div key={element.id}>
+                    recipes.menuItems ? <>
+                    {recipes.menuItems.map((element:any)=>(<div key={element.id}>
                         {element.title}
                         <img src={element.image} alt={element.title} />
                     </div>))}
-                    </>: <div>no recipes to display</div>
+                    </>: <div>no recipes found</div>
                 }
             </section>
         </div>
