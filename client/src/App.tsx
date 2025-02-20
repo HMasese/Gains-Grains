@@ -6,13 +6,8 @@ import EnterButton from './components/EnterButton';
 // import Loginbutton from './components/Loginbutton';
 import Userbody from './components/Userbody';
 import ProfilePic from './components/Profilepic';
-
 // Importing styles
 import './styles/index.css';
-import './styles/header.css';
-import './styles/Users.css';
-import './styles/Footer.css';
-
 function App() {
   return (
     <div>
@@ -30,6 +25,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
-
