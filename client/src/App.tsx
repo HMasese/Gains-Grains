@@ -4,31 +4,32 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Motivation from './components/Animal';
 import EnterButton from './components/EnterButton';
+// import Loginbutton from './components/Loginbutton';
 import Userbody from './components/Userbody';
 import ProfilePic from './components/Profilepic';
-// import './header.css';
+
+// Importing styles
+import './styles/index.css';
+
 
 function App() {
   return (
     <div>
-      <Header />
-      {/* <Routes>
-      <Route path="/nutritional-plans" element={<NutritionalPlans />} />
-      </Routes> */}
+      <Header/>
       <Navbar />
-      <main className='container pt-5'>
-        <EnterButton />
+      <main className="container pt-5">
+        {/* <EnterButton /> */}
         {/* <Loginbutton /> */}
         <ProfilePic />
         <h1>Profilepic</h1>
         <Userbody />
         <Outlet />
         <Motivation />
-
       </main>
       <Footer />
     </div>
   );
 }
 
-export default App
+export default App;
+

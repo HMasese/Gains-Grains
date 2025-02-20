@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+// import './styles/ProfilePic.css';
 
 const ProfilePic: React.FC = () => {
     const [selectedFile, setSelectedFile] = useState<File | null>(null);
@@ -24,7 +25,7 @@ const ProfilePic: React.FC = () => {
             }
 
             if (file.size > maxSize) {
-                alert('File size exceeds 2MB');
+                alert('File size exceeds 10MB');
                 return;
             }
 
@@ -59,11 +60,19 @@ const ProfilePic: React.FC = () => {
         }
     };
 
-    // you saved it to local storage dumb dumb -_- Upload it to what?
     return (
         <div>
             <form onSubmit={handleSubmit}>
-                <input type="file" accept="image/jpeg" onChange={handleFileChange} />
+                <label htmlFor="file-upload" className="custom-file-upload">
+                    Choose File
+                </label>
+                <input
+                    id="file-upload"
+                    type="file"
+                    accept="image/jpeg"
+                    className="file-input"
+                    onChange={handleFileChange}
+                />
                 {preview && <img src={preview} alt="Profile Preview" />}
                 {/* <button type="submit">Upload</button> */}
             </form>
