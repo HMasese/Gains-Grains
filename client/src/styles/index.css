@@ -1,67 +1,125 @@
-/* General Styles */
+:root {
+  --primary-color: #28A745;
+  /* Green for fitness/nutrition */
+  --secondary-color: #FF9800;
+  /* Orange for energy */
+  --background-color: #FFFFFF;
+  --text-color: #333;
+  --white: #FFFFFF;
+  --dark-gray: #555;
+}
+@import url('https://fonts.googleapis.com/css2?family=Extenda+30+Deca&display=swap');
+html {
+  background-color: beige;
+}
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #ffff;
+  color: var(--text-color);
+  line-height: 1.6;
 }
-
-/* Container */
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Header */
-.header {
-  background: #333;
-  color: #fff;
-  padding: 20px;
+/* HEADER */
+header {
+  background-color: green;
+  font-weight: bold;
+  color: #FFFFFF;
   text-align: center;
+  padding: 20px;
+  font-family: 'Extenda 30 Deca', sans-serif;
 }
-
-/* Navigation */
-.navbar {
+header nav ul {
+  list-style-type: none;
+  /* Remove bullet points */
+  padding: 0;
+  /* Remove default padding */
   display: flex;
+  /* Display list items in a row */
   justify-content: space-around;
-  background: #444;
-  padding: 10px 0;
+  /* Distribute items evenly */
 }
-
+header nav ul li {
+  margin: 0 10px;
+  /* Add some spacing between items */
+}
+header nav ul li a {
+  text-decoration: none;
+  /* Remove underline from links */
+  color: rgb(255, 253, 253);
+  /* Set link color */
+}
+header a {
+  color: red;
+}
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-family: 'Extenda 30 Deca', sans-serif;
+}
+/* Navbar */
+NAVBAR .navbar {
+  background-color: var(--primary-color);
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white);
+}
 .navbar a {
-  color: white;
+  color: var(--white);
   text-decoration: none;
   padding: 10px 15px;
+  font-weight: 600;
+  transition: 0.3s;
 }
-
 .navbar a:hover {
-  background: #555;
+  color: var(--secondary-color);
 }
-
-/* Main Content */
-.main {
-  padding: 20px;
+/* PROFILE PAGE */
+.profile-container {
   background: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-}
-
-/* Footer */
-.footer {
+  width: 400px;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   text-align: center;
-  padding: 20px;
-  background: #222;
+}
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #27AE60;
+}
+/* LOGIN PAGE */
+.login-container {
+  background: white;
+  padding: 30px;
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+/* Profilepic */
+.file-input {
+  display: none;
+}
+.custom-file-upload {
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  background-color: #007BFF;
   color: white;
-  margin-top: 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  position: absolute;
+  top: 200px;
+  left: 0;
+  margin: 10px
 }
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-  }
+.custom-file-upload:hover {
+  background-color: #0056B3;
 }
-
