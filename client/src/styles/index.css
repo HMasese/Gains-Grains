@@ -1,4 +1,11 @@
-
+.inconsolata-unique {
+  font-family: "Inconsolata", serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Replace with the desired font weight value */
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
 :root {
   --primary-color: #28a745;  /* Green for fitness/nutrition */
   --secondary-color: #ff9800; /* Orange for energy */
@@ -13,6 +20,9 @@
 
 html {
     background-color: rgb(255, 255, 255);
+    body {
+  background-image: url("bgdesert.jpg");
+}
     
 }
 
@@ -69,6 +79,7 @@ header h1 {
 .navbar a:hover {
   color: var(--secondary-color);
 }
+<<<<<<< HEAD
 /* General Styles */
 body {
   font-family: 'Poppins', sans-serif;
@@ -80,6 +91,8 @@ body {
   align-items: center;
   height: 100vh;
 }
+=======
+>>>>>>> 944ceee6a00069ab13f5694a2beaa29fdb6fe649
 
 /* PROFILE PAGE */
 .profile-container {
@@ -194,6 +207,7 @@ body {
 
 /* Login Container */
 .login-container {
+<<<<<<< HEAD
   background: white;
   padding: 30px;
   width: 350px;
@@ -204,6 +218,8 @@ body {
 
 /* Logo */
 .logo {
+=======
+>>>>>>> 944ceee6a00069ab13f5694a2beaa29fdb6fe649
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -286,12 +302,11 @@ body {
   justify-content: space-between;
   align-items: flex;
   padding-bottom: 15px;
-  border-bottom: 2px solid #ffffff;
-}
-
-.dashboard-header h2 {
-  font-size: 24px;
-  color: #333;
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #ffffff;
+  margin: 0;
+  padding: 0;
 }
 
 /* User Stats Grid */
@@ -541,3 +556,12 @@ footer {
   width: 100%;
   font-size: 0.9rem;
 }
+<<<<<<< HEAD
+=======
+/* ======= */
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+/* >>>>>>> 2835b4e0573eb07583f05b8c5e49ad834c31a918 */
+>>>>>>> 944ceee6a00069ab13f5694a2beaa29fdb6fe649
