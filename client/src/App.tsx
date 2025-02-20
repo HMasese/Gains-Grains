@@ -10,10 +10,10 @@ import Userbody from './components/Userbody';
 import ProfilePic from './components/Profilepic';
 
 // Importing styles
-import './styles/header.css';
+// import './styles/header.css';
 import './styles/index.css';
-import './styles/Users.css';
-import './styles/Footer.css';
+// import './styles/Users.css';
+// import './styles/Footer.css';
 
 function App() {
   return (
