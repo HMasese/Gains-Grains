@@ -39,13 +39,13 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #069a2d;
+    background-color: #d96d14;
     color: #000;
 }
 
 hr {
     border: none;
     height: 2px;
-    background-color: #069a2d;
+    background-color: #d96d14;
     margin-top: 15px;
 }
