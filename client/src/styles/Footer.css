@@ -1,7 +1,8 @@
 footer {
-    background-color: #222;
+    background-color: transparent;
     color: #fff;
     text-align: center;
+    align-self: center;
     padding: 1rem;
     position: fixed;
     bottom: 0;
