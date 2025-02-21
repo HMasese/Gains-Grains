@@ -12,7 +12,7 @@ import Recipe from './components/Recipe';
 
 const Recipe = () => {
     const [recipes, setRecipes] = useState([] as any);
-    const [query, setQuery] = useState('Chicken')
+    const [query, setQuery] = useState('Salmon')
     
     useEffect(() => {
         searchFood()
