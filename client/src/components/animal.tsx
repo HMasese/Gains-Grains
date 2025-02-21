@@ -1,4 +1,4 @@
-function motivation(){
+function Motivation(){
 
     const animal1 = "For those with goals";
     const animal2 = "For those with big plans";
@@ -18,4 +18,4 @@ console.log(animal);
     );
 }
 
-export default motivation
+export default Motivation

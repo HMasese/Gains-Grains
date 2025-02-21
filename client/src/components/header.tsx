@@ -1,4 +1,4 @@
-function header() {
+function Header() {
     return (
         <header>
             <h1>Gains & Grains</h1>
@@ -16,4 +16,4 @@ function header() {
         </header>
     );
 }
-export default header
+export default Header

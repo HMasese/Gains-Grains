@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Header from './components/Header.js';  // Ensure this is correctly imported
+import Header from './components/Header';  // Ensure this is correctly imported
 import Footer from './components/Footer';
 import Motivation from './components/Animal';
 // import EnterButton from './components/EnterButton';
