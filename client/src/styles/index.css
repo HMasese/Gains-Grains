@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Extenda+30+Deca&display=swap');
 :root {
   --primary-color: #28A745;
   /* Green for fitness/nutrition */
@@ -8,7 +9,6 @@
   --white: #FFFFFF;
   --dark-gray: #555;
 }
-@import url('https://fonts.googleapis.com/css2?family=Extenda+30+Deca&display=swap');
 html {
   background-color: beige;
 }
@@ -116,7 +116,6 @@ NAVBAR .navbar {
   border: none;
   border-radius: 4px;
   font-size: 16px;
-  position: ;
   top: 200px;
   left: 0;
   margin: 10px
