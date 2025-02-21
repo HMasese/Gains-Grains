@@ -58,6 +58,7 @@ header h1 {
   font-weight: bold;
   font-family: 'Extenda 30 Deca', sans-serif;
 }
+
 /* Navbar */
 NAVBAR .navbar {
   background-color: var(--primary-color);
@@ -115,7 +116,7 @@ NAVBAR .navbar {
   border: none;
   border-radius: 4px;
   font-size: 16px;
-  position: absolute;
+  position: ;
   top: 200px;
   left: 0;
   margin: 10px

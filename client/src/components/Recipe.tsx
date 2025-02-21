@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import React from 'react';
-import ReactDom from 'react-dom';
-import Recipe from './components/Recipe';
+// import ReactDom from 'react-dom';
+// import Recipe from './components/Recipe';
 
 // ReacrDom.render(
 //     <React.StrictMode>
@@ -12,7 +12,7 @@ import Recipe from './components/Recipe';
 
 const Recipe = () => {
     const [recipes, setRecipes] = useState([] as any);
-    const [query, setQuery] = useState('Chicken')
+    const [query, setQuery] = useState('Salmon')
     
     useEffect(() => {
         searchFood()
