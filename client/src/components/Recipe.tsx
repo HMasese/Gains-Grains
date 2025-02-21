@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import React from 'react';
-import ReactDom from 'react-dom';
-import Recipe from './components/Recipe';
+// import ReactDom from 'react-dom';
+// import Recipe from './components/Recipe';
 
 // ReacrDom.render(
 //     <React.StrictMode>
