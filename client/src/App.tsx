@@ -1,21 +1,19 @@
 import { Outlet } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Header from './components/Header';
+import Header from './components/Header';  // Ensure this is correctly imported
 import Footer from './components/Footer';
 import Motivation from './components/Animal';
 import EnterButton from './components/EnterButton';
 // import Loginbutton from './components/Loginbutton';
 import Userbody from './components/Userbody';
 import ProfilePic from './components/Profilepic';
-
 // Importing styles
 import './styles/index.css';
-
 
 function App() {
   return (
     <div>
-      <Header/>
+      <Header />
       <Navbar />
       <main className="container pt-5">
         {/* <EnterButton /> */}
@@ -32,4 +30,3 @@ function App() {
 }
 
 export default App;
-
